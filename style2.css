@@ -1,0 +1,42 @@
+.post-body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    margin: 1.5rem;padding: 30px;
+    width: 450px; height: 350px;
+    background-color: whitesmoke;
+    text-align: center;
+    transition: height 0.4s linear;
+}
+.card h2 {padding: 12px}
+.card p {
+    visibility: hidden;
+    font-size: 17px; color: rgb(99, 99, 99);
+    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', serif;
+    line-height: 1.5;
+}
+.andaman:hover, .darjeeling:hover{height:500px;} 
+.leh-ladak:hover{height:450px;}
+.manali:hover, .ooty:hover{height:476px;}
+
+
+.card:hover p{
+    animation: text 0.2s linear 0.2s ;
+    animation-fill-mode: forwards;
+}
+.card img{
+    width:450px; height: 300px;
+}
+@keyframes text {
+    0%{
+        visibility: visible;
+        opacity: 0;
+    }
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
